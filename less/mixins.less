@@ -1,1 +1,20 @@
-// Mixins Here
+.flexflex(@justice, @align, @flexway:row){
+    display:flex;
+    justify-content: @justice;
+    align-items: @align;
+    flex-direction: @flexway;
+}
+
+.bannerimg{
+    border-radius:5px;
+}
+.signbtn{
+    .flexflex(center,center);
+    background-color: @btn-bg-color;
+    color: @porcelain;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    width: 35%;
+    padding: 3% 0;
+    font-weight: bold;
+}
