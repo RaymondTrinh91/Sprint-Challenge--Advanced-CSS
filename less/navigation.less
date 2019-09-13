@@ -1,1 +1,31 @@
-// Navigation code here
+.naver{
+    .flexflex( center, center, column);
+    background-color: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+    padding: 3% 0;
+    
+    \h1{
+        font-size: 4rem;        
+    }
+    nav{
+        .flexflex(@justice:space-between, @align:baseline);
+        width:40%;
+        padding-top: 2%;
+
+        @media(@phone){
+            width: 80%;
+        }
+        a{
+            font-size: 1.6rem;
+            text-decoration: none;
+            color: @nav-font;
+
+            &:hover{
+                color: @nav-bg;
+                background-color: @ebony-clay;
+                border-radius: 5px;
+            }
+        }
+    }    
+
+}
